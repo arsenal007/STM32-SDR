@@ -1,0 +1,85 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:LCSDR
+LIBS:MCU_ST_STM32
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:4ms-ic
+LIBS:Connector
+LIBS:LCSDR-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F401RBTx U?
+U 1 1 5DD2EFC1
+P 4950 3400
+F 0 "U?" H 2750 5325 50  0000 L BNN
+F 1 "STM32F401RBTx" H 7150 5325 50  0000 R BNN
+F 2 "LQFP64" H 7150 5275 50  0001 R TNN
+F 3 "" H 4950 3400 50  0001 C CNN
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4000 1700 4000
+Text GLabel 1700 4000 0    60   Output ~ 0
+I2S_MCLK
+Wire Wire Line
+	7250 4900 8600 4900
+Wire Wire Line
+	8600 4900 8600 5850
+Wire Wire Line
+	8600 5850 9000 5850
+Text GLabel 9000 5850 2    60   BiDi ~ 0
+I2S_SDO
+Text GLabel 9000 5550 2    60   BiDi ~ 0
+I2S_SDO
+Wire Wire Line
+	9000 5550 8800 5550
+Wire Wire Line
+	8800 5550 8800 4700
+Wire Wire Line
+	8800 4700 7250 4700
+Wire Wire Line
+	7250 4800 8700 4800
+Wire Wire Line
+	8700 4800 8700 5700
+Wire Wire Line
+	8700 5700 9000 5700
+Text GLabel 9000 5700 2    60   BiDi ~ 0
+I2S_SDI
+$EndSCHEMATC

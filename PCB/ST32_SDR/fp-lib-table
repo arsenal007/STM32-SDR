@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LCSDR)(type KiCad)(uri libs/LCSDR.pretty/)(options "")(descr ""))
+)
