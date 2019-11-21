@@ -1,4 +1,4 @@
-update=Di 19 Nov 2019 07:29:01 CET
+update=11/21/2019 6:02:08 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,8 +64,8 @@ LibName21=opto
 LibName22=atmel
 LibName23=contrib
 LibName24=libs/LCSDR
-LibName25=MCU_ST_STM32
-LibName26=Logic_74xx
-LibName27=Logic_CMOS_4000
-LibName28=libs/4ms-ic
-LibName29=Connector
+LibName25=Logic_74xx
+LibName26=Logic_CMOS_4000
+LibName27=libs/4ms-ic
+LibName28=Connector
+LibName29=stm32

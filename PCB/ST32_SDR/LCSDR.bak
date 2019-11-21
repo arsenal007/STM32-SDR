@@ -23,17 +23,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:LCSDR
-LIBS:MCU_ST_STM32
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
 LIBS:4ms-ic
-LIBS:Connector
+LIBS:stm32
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Hermes-Lite"
 Date "2016-02-18"
 Rev "2.0-pre1"
@@ -6258,5 +6255,11 @@ S 3150 18150 3700 1800
 U 5DD2EDB8
 F0 "MCU" 60
 F1 "MCU.sch" 60
+$EndSheet
+$Sheet
+S 3100 20550 3700 1700
+U 5DD3CF89
+F0 "microSD" 60
+F1 "microSD.sch" 60
 $EndSheet
 $EndSCHEMATC
