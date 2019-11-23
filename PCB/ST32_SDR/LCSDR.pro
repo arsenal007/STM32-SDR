@@ -1,4 +1,4 @@
-update=11/21/2019 6:02:08 AM
+update=Sa 23 Nov 2019 06:00:46 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,4 +68,5 @@ LibName25=Logic_74xx
 LibName26=Logic_CMOS_4000
 LibName27=libs/4ms-ic
 LibName28=Connector
-LibName29=stm32
+LibName29=Display
+LibName30=TRXklopik

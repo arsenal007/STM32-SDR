@@ -23,14 +23,18 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:LCSDR
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
 LIBS:4ms-ic
-LIBS:stm32
+LIBS:Connector
+LIBS:Display
+LIBS:TRXklopik
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
