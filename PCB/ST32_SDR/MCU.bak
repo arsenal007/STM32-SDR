@@ -23,8 +23,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:LCSDR
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
 LIBS:4ms-ic
+LIBS:Connector
 LIBS:Display
+LIBS:TRXklopik
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -573,7 +577,7 @@ F 3 "" H 7800 900 50  0001 C CNN
 	1    7800 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10350 850  2    60   BiDi ~ 0
+Text GLabel 9600 1950 2    60   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	8250 1850 8650 1850
@@ -592,13 +596,17 @@ Wire Wire Line
 Wire Wire Line
 	8950 2150 8950 1350
 Wire Wire Line
-	9050 2250 8250 2250
+	8250 2250 9050 2250
 Wire Wire Line
-	9050 1150 9050 2250
+	9050 2250 9050 1350
 Wire Wire Line
-	9150 2350 8250 2350
+	8250 2350 9150 2350
 Wire Wire Line
-	9150 1300 9150 2350
+	9150 2350 9150 1350
+Wire Wire Line
+	8250 2450 9250 2450
+Wire Wire Line
+	9250 2450 9250 1350
 Wire Wire Line
 	10500 3050 10500 2650
 Wire Wire Line
@@ -608,41 +616,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 2450 10600 2450
 Wire Wire Line
-	9350 2550 8250 2550
-Text GLabel 10350 700  2    60   BiDi ~ 0
-I2C_SDA
-Text GLabel 10350 550  2    60   BiDi ~ 0
-I2C_SDA
+	8250 2550 9350 2550
 Wire Wire Line
-	9050 1150 10350 1150
-Text GLabel 10350 1000 2    60   BiDi ~ 0
-I2C_SDA
-Text GLabel 10350 1150 2    60   Output ~ 0
-LCD_CE
-Text GLabel 10350 1300 2    60   Output ~ 0
-LCD_CLK
-Wire Wire Line
-	10350 1300 9150 1300
-Text GLabel 10350 1450 2    60   Output ~ 0
-LCD_DIN
-Wire Wire Line
-	9350 1450 9350 2550
-Wire Wire Line
-	9350 1450 10350 1450
-Wire Wire Line
-	8250 2650 9450 2650
-Wire Wire Line
-	9450 2650 9450 1600
-Wire Wire Line
-	9450 1600 10350 1600
-Wire Wire Line
-	8250 2750 9550 2750
-Text GLabel 10350 1600 2    60   Input ~ 0
-ENCODER_B
-Text GLabel 10350 1750 2    60   Input ~ 0
-ENCODER_A
-Wire Wire Line
-	10350 1750 9550 1750
-Wire Wire Line
-	9550 1750 9550 2750
+	9350 2550 9350 1350
 $EndSCHEMATC

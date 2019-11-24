@@ -23,8 +23,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:LCSDR
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
 LIBS:4ms-ic
+LIBS:Connector
 LIBS:Display
+LIBS:TRXklopik
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -40,15 +44,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L STM32F103C8Tx U12
-U 1 1 5DC33740
-P 5650 3350
-F 0 "U12" H 2850 5075 50  0000 L BNN
-F 1 "STM32F103C8Tx" H 8450 5075 50  0000 R BNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 8450 5025 50  0001 R TNN
-F 3 "" H 5650 3350 50  0001 C CNN
-	1    5650 3350
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
