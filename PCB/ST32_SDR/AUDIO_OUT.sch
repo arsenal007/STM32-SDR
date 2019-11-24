@@ -23,12 +23,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:LCSDR
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
 LIBS:4ms-ic
-LIBS:Connector
 LIBS:Display
-LIBS:TRXklopik
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
