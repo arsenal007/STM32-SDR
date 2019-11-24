@@ -1,0 +1,75 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:LCSDR
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:4ms-ic
+LIBS:Connector
+LIBS:Display
+LIBS:TRXklopik
+LIBS:LCSDR-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR?
+U 1 1 5DDA30F6
+P 3900 2850
+F 0 "#PWR?" H 3900 2600 50  0001 C CNN
+F 1 "GND" H 3900 2700 50  0000 C CNN
+F 2 "" H 3900 2850 50  0001 C CNN
+F 3 "" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nokia_5110_LCD U?
+U 1 1 5DDA3747
+P 3150 1600
+F 0 "U?" H 3100 1800 60  0000 C CNN
+F 1 "Nokia_5110_LCD" H 3150 1700 60  0000 C CNN
+F 2 "" H 2700 1400 60  0000 C CNN
+F 3 "" H 2700 1400 60  0000 C CNN
+	1    3150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2500 3500 2700
+Wire Wire Line
+	3500 2700 3900 2700
+Wire Wire Line
+	3900 2700 3900 2850
+$EndSCHEMATC
