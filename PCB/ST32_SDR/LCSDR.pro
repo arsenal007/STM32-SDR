@@ -1,4 +1,4 @@
-update=Sa 23 Nov 2019 06:00:46 CET
+update=11/27/2019 5:22:17 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,9 +64,10 @@ LibName21=opto
 LibName22=atmel
 LibName23=contrib
 LibName24=libs/LCSDR
-LibName25=Logic_74xx
-LibName26=Logic_CMOS_4000
-LibName27=libs/4ms-ic
-LibName28=Connector
-LibName29=Display
-LibName30=TRXklopik
+LibName25=libs/4ms-ic
+LibName26=Display
+LibName27=TRXklopik
+LibName28=stm32
+LibName29=switches
+LibName30=cmos4000
+LibName31=conn
