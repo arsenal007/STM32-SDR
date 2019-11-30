@@ -79,7 +79,9 @@ Wire Wire Line
 Wire Wire Line
 	3550 2250 3700 2250
 Wire Wire Line
-	3550 1500 3550 2250
+	3550 1500 3550 1800
+Wire Wire Line
+	3550 1800 3550 2250
 $Comp
 L +3V3 #PWR01
 U 1 1 5DDEDF62
@@ -117,7 +119,7 @@ Wire Wire Line
 	3000 2650 3000 2900
 Text GLabel 2550 2700 0    60   Input ~ 0
 I2C_SCL
-Text GLabel 2550 2900 0    60   Input ~ 0
+Text GLabel 2550 2900 0    60   BiDi ~ 0
 I2C_SDA
 Wire Wire Line
 	3000 2900 2550 2900
@@ -211,7 +213,9 @@ F 3 "" H 6100 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1100 6500 1100
+	5950 1100 6100 1100
+Wire Wire Line
+	6100 1100 6500 1100
 Wire Wire Line
 	6100 1100 6100 1200
 Wire Wire Line
@@ -228,7 +232,9 @@ F 3 "" H 6100 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1850 6500 1850
+	5950 1850 6100 1850
+Wire Wire Line
+	6100 1850 6500 1850
 Wire Wire Line
 	6100 1850 6100 1950
 Text GLabel 6500 1100 2    60   Output ~ 0
@@ -268,7 +274,9 @@ F 3 "" H 6100 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 2650 6500 2650
+	5950 2650 6100 2650
+Wire Wire Line
+	6100 2650 6500 2650
 Wire Wire Line
 	6100 2650 6100 2750
 $Comp
@@ -299,36 +307,74 @@ F 3 "" H 3400 4600 50  0001 C CNN
 	1    3400 4600
 	0    1    1    0   
 $EndComp
-Text GLabel 2850 4250 0    60   Input ~ 0
+Text GLabel 2750 4850 0    60   Input ~ 0
 BAND0
 Wire Wire Line
 	3000 4400 3200 4400
-Text GLabel 2850 4450 0    60   Input ~ 0
+Text GLabel 2750 4650 0    60   Input ~ 0
 BAND1
 Wire Wire Line
 	2900 4500 3200 4500
-Text GLabel 2850 4650 0    60   Input ~ 0
+Text GLabel 2750 4450 0    60   Input ~ 0
 BAND2
 Wire Wire Line
-	2850 4450 2900 4450
+	2750 4450 2900 4450
 Wire Wire Line
 	2900 4450 2900 4500
 Wire Wire Line
-	2850 4650 2900 4650
+	2750 4650 2900 4650
 Wire Wire Line
 	2900 4650 2900 4600
 Wire Wire Line
 	2900 4600 3200 4600
-Text GLabel 2850 4850 0    60   Input ~ 0
+Text GLabel 2750 4250 0    60   Input ~ 0
 BAND3
 Wire Wire Line
-	2850 4250 3000 4250
+	2750 4250 3000 4250
 Wire Wire Line
 	3000 4250 3000 4400
 Wire Wire Line
-	2850 4850 3000 4850
+	2750 4850 3000 4850
 Wire Wire Line
 	3000 4850 3000 4700
 Wire Wire Line
 	3000 4700 3200 4700
+Text GLabel 1300 1050 0    60   Input ~ 0
+I2C_SCL_MCU
+Text GLabel 1300 1300 0    60   BiDi ~ 0
+I2C_SDA_MCU
+$Comp
+L R_Small R?
+U 1 1 5DE23CAB
+P 1550 1050
+F 0 "R?" V 1750 1050 50  0000 L CNN
+F 1 "56" V 1650 1050 50  0000 L CNN
+F 2 "" H 1550 1050 50  0001 C CNN
+F 3 "" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5DE23D38
+P 1550 1300
+F 0 "R?" V 1450 1300 50  0000 L CNN
+F 1 "56" V 1350 1300 50  0000 L CNN
+F 2 "" H 1550 1300 50  0001 C CNN
+F 3 "" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1850 1050 2    60   Output ~ 0
+I2C_SCL
+Wire Wire Line
+	1450 1050 1300 1050
+Wire Wire Line
+	1650 1050 1850 1050
+Text GLabel 1850 1300 2    60   BiDi ~ 0
+I2C_SDA
+Wire Wire Line
+	1850 1300 1650 1300
+Wire Wire Line
+	1450 1300 1300 1300
 $EndSCHEMATC
