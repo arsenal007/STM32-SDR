@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:Connector
-LIBS:Relay
+LIBS:switches
+LIBS:cmos4000
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -85,7 +85,7 @@ F 1 "56R" H 2600 2750 50  0000 C CNN
 F 2 "Resistors_SMD:R_Array_Convex_4x0603" V 3275 2800 50  0001 C CNN
 F 3 "" H 3000 2800 50  0001 C CNN
 	1    3000 2800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L +3V3 #PWR052

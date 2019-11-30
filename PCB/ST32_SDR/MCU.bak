@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:Connector
-LIBS:Relay
+LIBS:switches
+LIBS:cmos4000
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -359,15 +359,15 @@ Text GLabel 10000 2150 2    60   Output ~ 0
 UART_RX
 Wire Wire Line
 	9550 2650 10000 2650
-Text GLabel 10000 1600 2    60   Output ~ 0
+Text GLabel 2050 6850 0    60   Output ~ 0
 LCD_DC
 Text GLabel 10000 2300 2    60   Input ~ 0
 UART_TX
-Text GLabel 10000 1300 2    60   Output ~ 0
+Text GLabel 10000 3350 2    60   Output ~ 0
 LCD_CE
-Text GLabel 10000 1450 2    60   Output ~ 0
+Text GLabel 2050 6700 0    60   Output ~ 0
 LCD_CLK
-Text GLabel 10000 1750 2    60   Output ~ 0
+Text GLabel 2050 7000 0    60   Output ~ 0
 LCD_DIN
 Text GLabel 10000 750  2    60   Input ~ 0
 ENCODER_B
@@ -397,7 +397,7 @@ Wire Wire Line
 	3350 4950 3350 7450
 Wire Wire Line
 	3350 7450 2050 7450
-Text GLabel 2050 7000 0    60   Input ~ 0
+Text GLabel 4350 7150 0    60   Input ~ 0
 KEY_A
 Text GLabel 2050 7150 0    60   Input ~ 0
 KEY_B
@@ -405,9 +405,7 @@ Text GLabel 2050 7300 0    60   Input ~ 0
 KEY_C
 Text GLabel 2050 7450 0    60   Input ~ 0
 KEY_D
-Text GLabel 2050 6850 0    60   Input ~ 0
-KEY_CW
-Text GLabel 2050 6700 0    60   Input ~ 0
+Text GLabel 4350 7350 0    60   Input ~ 0
 PTT_IN
 Wire Wire Line
 	2050 6850 2950 6850
@@ -512,7 +510,7 @@ Text GLabel 10000 1950 2    60   Output ~ 0
 TX1
 Wire Wire Line
 	8250 1850 8350 1850
-Text GLabel 10000 3350 2    60   Output ~ 0
+Text GLabel 6550 5900 2    60   Output ~ 0
 TX2
 Wire Wire Line
 	8250 1950 8450 1950
@@ -777,4 +775,6 @@ Text GLabel 10000 950  2    60   Output ~ 0
 LINE_OUT_LEFT_MCU
 Text GLabel 10000 1100 2    60   Output ~ 0
 LINE_OUT_RIGHT_MCU
+Text GLabel 4700 6700 0    60   Input ~ 0
+KEY_CW
 $EndSCHEMATC
