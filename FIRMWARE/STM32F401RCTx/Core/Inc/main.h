@@ -64,26 +64,10 @@ void Error_Handler(void);
 #define KEY_C_GPIO_Port GPIOC
 #define KEY_D_Pin GPIO_PIN_15
 #define KEY_D_GPIO_Port GPIOC
-#define LCD_CE_Pin GPIO_PIN_4
-#define LCD_CE_GPIO_Port GPIOA
-#define LCD_CLK_Pin GPIO_PIN_5
-#define LCD_CLK_GPIO_Port GPIOA
-#define LCD_DC_Pin GPIO_PIN_6
-#define LCD_DC_GPIO_Port GPIOA
-#define LCD_DIN_Pin GPIO_PIN_7
-#define LCD_DIN_GPIO_Port GPIOA
-#define LCD_RESET_Pin GPIO_PIN_4
-#define LCD_RESET_GPIO_Port GPIOC
-#define LCD_LIGHT_Pin GPIO_PIN_5
-#define LCD_LIGHT_GPIO_Port GPIOC
-#define BAND0_Pin GPIO_PIN_0
-#define BAND0_GPIO_Port GPIOB
-#define BAND1_Pin GPIO_PIN_1
-#define BAND1_GPIO_Port GPIOB
-#define BAND2_Pin GPIO_PIN_2
-#define BAND2_GPIO_Port GPIOB
-#define BAND3_Pin GPIO_PIN_10
-#define BAND3_GPIO_Port GPIOB
+#define ENCODER_A_Pin GPIO_PIN_6
+#define ENCODER_A_GPIO_Port GPIOA
+#define ENCODER_B_Pin GPIO_PIN_7
+#define ENCODER_B_GPIO_Port GPIOA
 #define I2S_LRCK_Pin GPIO_PIN_12
 #define I2S_LRCK_GPIO_Port GPIOB
 #define I2S_SCLK_Pin GPIO_PIN_13
@@ -92,12 +76,18 @@ void Error_Handler(void);
 #define I2S_SDI_GPIO_Port GPIOB
 #define I2S_SDO_Pin GPIO_PIN_15
 #define I2S_SDO_GPIO_Port GPIOB
-#define KEY_MENU_Pin GPIO_PIN_9
-#define KEY_MENU_GPIO_Port GPIOC
-#define KEY_CW_Pin GPIO_PIN_11
-#define KEY_CW_GPIO_Port GPIOC
-#define KEY_A_Pin GPIO_PIN_12
-#define KEY_A_GPIO_Port GPIOC
+#define LCD_CE_Pin GPIO_PIN_15
+#define LCD_CE_GPIO_Port GPIOA
+#define LCD_CLK_Pin GPIO_PIN_10
+#define LCD_CLK_GPIO_Port GPIOC
+#define LCD_DC_Pin GPIO_PIN_11
+#define LCD_DC_GPIO_Port GPIOC
+#define LCD_DIN_Pin GPIO_PIN_12
+#define LCD_DIN_GPIO_Port GPIOC
+#define LCD_RESET_Pin GPIO_PIN_2
+#define LCD_RESET_GPIO_Port GPIOD
+#define LCD_LIGHT_Pin GPIO_PIN_4
+#define LCD_LIGHT_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

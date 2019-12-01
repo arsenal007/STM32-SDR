@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:Connector
-LIBS:Relay
+LIBS:switches
+LIBS:cmos4000
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -628,7 +628,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 4750 7750 4850
 Wire Wire Line
-	7550 5650 7800 5650
+	7150 5650 7800 5650
 $Comp
 L GND #PWR078
 U 1 1 5DDF6EA6
@@ -858,4 +858,8 @@ Wire Wire Line
 	7550 5550 7550 5250
 Connection ~ 7550 5550
 Connection ~ 7550 5750
+Wire Wire Line
+	7150 5650 7150 5750
+Connection ~ 7150 5750
+Connection ~ 7550 5650
 $EndSCHEMATC

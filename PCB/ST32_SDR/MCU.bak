@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:Connector
-LIBS:Relay
+LIBS:switches
+LIBS:cmos4000
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -355,7 +355,7 @@ F 3 "" H 7800 900 50  0001 C CNN
 	1    7800 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10000 2150 2    60   Output ~ 0
+Text GLabel 10700 2100 2    60   Output ~ 0
 UART_RX
 Wire Wire Line
 	9550 2650 10000 2650
@@ -369,9 +369,9 @@ Text GLabel 2050 6700 0    60   Output ~ 0
 LCD_CLK
 Text GLabel 2050 7000 0    60   Output ~ 0
 LCD_DIN
-Text GLabel 10000 750  2    60   Input ~ 0
+Text GLabel 10000 1750 2    60   Input ~ 0
 ENCODER_B
-Text GLabel 10000 600  2    60   Input ~ 0
+Text GLabel 10000 1600 2    60   Input ~ 0
 ENCODER_A
 Wire Wire Line
 	3650 4650 3050 4650
@@ -419,9 +419,7 @@ Wire Wire Line
 	2850 6700 2850 4450
 Wire Wire Line
 	2850 4450 3650 4450
-Wire Wire Line
-	2150 3250 2000 3250
-Text GLabel 2000 3250 0    60   Input ~ 0
+Text GLabel 1950 3800 0    60   Input ~ 0
 S-metr
 Text GLabel 2050 6550 0    60   Input ~ 0
 KEY_MENU
@@ -437,8 +435,6 @@ Connection ~ 3050 3050
 Wire Wire Line
 	2550 2650 2650 2650
 Connection ~ 2550 2950
-Wire Wire Line
-	2150 3450 2150 3250
 Text GLabel 2550 1850 0    60   BiDi ~ 0
 MCU_RESET
 Connection ~ 2750 1850
@@ -452,8 +448,6 @@ Text GLabel 10000 4550 2    60   Output ~ 0
 Q_IN_M1
 Text GLabel 10000 4400 2    60   Output ~ 0
 I_IN_M2
-Text GLabel 10000 4250 2    60   Output ~ 0
-I_IN_M1
 Wire Wire Line
 	8250 4250 9000 4250
 Wire Wire Line
@@ -466,8 +460,6 @@ Wire Wire Line
 	9400 3850 8250 3850
 Text GLabel 10000 3550 2    60   Output ~ 0
 BAND0
-Wire Wire Line
-	2150 3450 3650 3450
 Text GLabel 10000 3700 2    60   Output ~ 0
 BAND1
 Text GLabel 10000 5250 2    60   Output ~ 0
@@ -480,9 +472,9 @@ Wire Wire Line
 	2050 6100 2450 6100
 Wire Wire Line
 	2450 6100 2450 4050
-Text GLabel 2050 5800 0    60   Output ~ 0
+Text GLabel 1900 3450 0    60   Output ~ 0
 LCD_RESET
-Text GLabel 2050 5950 0    60   Output ~ 0
+Text GLabel 10000 4250 2    60   Output ~ 0
 LCD_LIGHT
 Wire Wire Line
 	2050 5950 2350 5950
@@ -506,7 +498,7 @@ Wire Wire Line
 	9500 3750 8250 3750
 Wire Wire Line
 	8700 4550 8250 4550
-Text GLabel 10000 1950 2    60   Output ~ 0
+Text GLabel 10750 1750 2    60   Output ~ 0
 TX1
 Wire Wire Line
 	8250 1850 8350 1850
@@ -777,4 +769,10 @@ Text GLabel 10000 1100 2    60   Output ~ 0
 LINE_OUT_RIGHT_MCU
 Text GLabel 4700 6700 0    60   Input ~ 0
 KEY_CW
+Wire Wire Line
+	1900 3450 3350 3450
+Wire Wire Line
+	3350 3450 3350 3250
+Wire Wire Line
+	3350 3250 3650 3250
 $EndSCHEMATC

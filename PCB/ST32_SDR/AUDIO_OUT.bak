@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:Connector
-LIBS:Relay
+LIBS:switches
+LIBS:cmos4000
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
