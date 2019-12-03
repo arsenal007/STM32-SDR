@@ -25,8 +25,8 @@ LIBS:contrib
 LIBS:LCSDR
 LIBS:4ms-ic
 LIBS:Display
-LIBS:switches
-LIBS:cmos4000
+LIBS:Connector
+LIBS:Relay
 LIBS:LCSDR-cache
 EELAYER 25 0
 EELAYER END
@@ -110,11 +110,11 @@ F 3 "" H 9700 2250 50  0001 C CNN
 	1    9700 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 9150 2150 0    60   Output ~ 0
+Text GLabel 9150 2550 0    60   Output ~ 0
 CLK0
 Text GLabel 9150 2350 0    60   Output ~ 0
 CLK1
-Text GLabel 9150 2550 0    60   Output ~ 0
+Text GLabel 9150 2150 0    60   Output ~ 0
 CLK2
 Wire Wire Line
 	9150 2150 9500 2150
